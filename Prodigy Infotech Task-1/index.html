@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<nav>
+		<label class="logo">DesignX</label>
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a class="active" href="#">About</a></li>
+			<li><a class="active" href="#">Services</a></li>
+			<li><a class="active" href="#">Contact</a></li>
+			<li><a class="active" href="#">Feedback</a></li>
+			<li>
+				<select style="height: 20px; width: 200px;" name="Tools" id="dropdown">
+					<option id="dropd" value="Tools">Tools</option>
+					<option value="Palette Generator">Palette Generator</option>
+					<option value="Explore Palettes">Explore Palettes</option>
+					<option value="Image Picker">Image Picker</option>
+					<option value="List of Fonts">List of Fonts></option>
+				</select>
+			</li>
+		</ul>
+		<label id="icon">
+			<i class="fa fa-bars"></i>
+		</label>
+	</nav>
+	<section>
+		<div></div>
+	</section>
+	<div id="colorDiv"></div>
+	<script>
+		$(document).ready(function () {
+			$('#icon').click(function () {
+				$('ul').toggleClass('show');
+			});
+		});
+	</script>
+</body>
+</html>
