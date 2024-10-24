@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<span id="logo"><a>K</a>ajal.</span>
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Web Developer</p>
+				<h1>Hi, I'm <span id="kajal">Kajal</span> <br> Ahirwar from <br> Madhya Pradesh</h1>
+				<img src="WhatsApp Image 2024-08-01 at 09.49.31_b0c638c3.jpg">
+			</div>
+
+		</div>
+	</div>
+	<hr style="height: 7px; background: rgb(78, 72, 72); border: none;">
+	<!-- ----------------about---------------- -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="WhatsApp Image 2024-08-01 at 08.45.02_37e26d57.jpg"
+						style="border-radius: 50%; height: 300px; width: 300px; margin-top: 50px;">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>
+						Currently I'm pursuing Bachelor of Technology in Computer science and diving into the exciting
+						world of Frontend Development. I'm passionate about creating dynamic and user-friendly web
+						applications using HTML, CSS and JavaScript. I'm eager to collaborate on projects and continue
+						expanding my skills in this field 💻.
+					</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li>
+								<span>Frontend Development</span>
+								<br>Creating, building, and maintaining websites using CSS, HTML and JavaScript
+							</li>
+							<li>
+								<span>DSA</span><br>Organizing & storing data and the design of algorithms for solving
+								problems
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li>
+								<span>2022 - current</span><br>
+								Web Development practices
+							</li>
+							<li>
+								<span>2021 - 2022</span><br>
+								Heavy command on computer basics
+							</li>
+							<li>
+								<span>1 Year</span><br>
+								Teaching Experience at home
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li>
+								<span>2022 - current</span><br>
+								Pursuing B.tech in computer science at SRITS, Datia(M.P.)
+							</li>
+							<li>
+								<span>2021 - 2022</span> <br>
+								DCA from AIMS college of institution, Niwari
+							</li>
+							<li>
+								<span>12th standard(2021)</span> <br>From Lord Jesus Public School Niwari, securing 93%
+							</li>
+							<li>
+								<span>10th standard(2019)</span><br>From H.A.H.S School Niwari, securing 92%
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr style="height: 7px; background: rgb(78, 72, 72); border: none;">
+	<!-- --------------portfolio---------------- -->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="game1.jpg">
+					<div class="layer">
+						<h3>Stone paper scissor game</h3>
+						<p>"👊 Rock, 📄 Paper, ✌️ Scissors: Choose     wisely! Experience the ancient duel of stone, paper,
+						and scissors in this interactive game. Crafted with HTML, CSS, and JavaScript, our game lets
+						you choose your weapon and face off against the computer."</p>
+						<a href="https://github.com/kjl98/Stone_paper_scissorGame">
+							<i style="color: #ff004f;"class="fas fa-external-link-alt"></i>
+						</a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="game3.png">
+					<div class="layer">
+						<h3>Tic-Tac-Toe Web application</h3>
+						<p> Immerse yourself in this classic game of Xs and Os. Built with HTML, CSS, and JavaScript,
+						our interactive Tic Tac Toe app lets you challenge friends or play against the computer. Can you outwit your opponent and claim victory?🎮</p>
+						<a href="https://github.com/kjl98/PRODIGY_TrackCode_Task3"><i
+							class="fas fa-external-link-alt"></i>
+						</a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="game3.jpg">
+					<div class="layer">
+						<h3>Stopwatch web Application</h3>
+						<p>Explore a user-friendly and feature-packed digital stopwatch built with HTML, CSS, and
+						JavaScript. Measure time accurately with essential functionalities like pause, reset, and
+						lap.
+						</p>
+						<a href="https://github.com/kjl98/PRODIGY_TrackCode_Task2"><i
+							class="fas fa-external-link-alt"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<a href="https://github.com/kjl98" class="btn">See more</a>
+		</div>
+	</div>
+	<hr style="height: 7px; background: rgb(78, 72, 72); border: none;"><br><br><br>
+	<!-- -----------------contact-------------------- -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p style="color: white;"><i class="fas fa-paper-plane"></i>kajalahirwar13032003@gmail.com</p>
+					<p style="color: white;"><i class="fas fa-phone-square-alt"></i> +91 8962296234</p>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/profile.php?id=61563469355641"><i
+							class="fab fa-facebook"></i></a>
+						<a href="https://x.com/Ahirwar__Kajal"><i class="fab fa-twitter-square"></i></a>
+						<a href="https://www.instagram.com/cazal_98/"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/kajal-ahirwar-b661732a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTps5rPafQzCRTl1GPwsmbg%3D%3D"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<a href="https://1drv.ms/w/c/0740c9018597c75b/EasaMo6AHOxIiYpkiv58G1QB9O25xHpi5s0jNyytInRvYQ?e=jqOcN8"
+						class="btn btn2">Download CV
+					</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p style="color: white;">Copyright <i class="fa-regular fa-copyright"></i> Kajal. Made with <i id="i1"
+				class="fas fa-heart"></i>
+			</p>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxn_-Ta5mVP_HpGz7IC2xztRA3SHgiUp4rBwcmOm7TDLQWbzIPKPfK2rxxE2s-y_xtA/exec'
+		const form = document.forms['submit-to-google-sheet']
+		const msg = document.getElementById("msg")
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => {
+                msg.innerHTML = "Message sent successfully.."
+				setTimeout(function() {
+					mag.innerHTML = ""
+				}, 5000)
+				form.reset()
+			})
+			.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+</body>
+</html>
